@@ -2,12 +2,12 @@ import { motion } from "framer-motion"
 import { ChevronRight, Check, Paperclip, Globe, Lightbulb } from "lucide-react"
 
 const agents = [
-  { name: "Cursor", isAgent: true, selected: true, icon: "◇" },
-  { name: "GitHub Copilot", isAgent: true, selected: false, icon: "◉" },
-  { name: "Sentry", isAgent: true, selected: false, icon: "◈" },
-  { name: "Leela", isAgent: false, selected: false, icon: "○" },
-  { name: "Codex", isAgent: true, selected: false, icon: "◎" },
-  { name: "Conor", isAgent: false, selected: false, icon: "○" },
+  { name: "Банда «Красный Восток»", isAgent: true, selected: true, icon: "◇" },
+  { name: "Группировка «Север»", isAgent: true, selected: false, icon: "◉" },
+  { name: "Клан «Призраки»", isAgent: true, selected: false, icon: "◈" },
+  { name: "Алексей (одиночка)", isAgent: false, selected: false, icon: "○" },
+  { name: "Синдикат «Нефть»", isAgent: true, selected: false, icon: "◎" },
+  { name: "Дмитрий (нейтральный)", isAgent: false, selected: false, icon: "○" },
 ]
 
 export function AISection() {
@@ -30,8 +30,8 @@ export function AISection() {
             transition={{ duration: 0.6 }}
             className="flex items-center gap-2 mb-6"
           >
-            <div className="w-2 h-2 rounded-full bg-blue-500" />
-            <span className="text-zinc-400 text-sm">Искусственный интеллект</span>
+            <div className="w-2 h-2 rounded-full bg-red-500" />
+            <span className="text-zinc-400 text-sm">Банды и союзы</span>
             <ChevronRight className="w-4 h-4 text-zinc-500" />
           </motion.div>
 
@@ -49,7 +49,7 @@ export function AISection() {
               lineHeight: 1.1,
             }}
           >
-            Разработка с ИИ-помощником
+            Создай свою банду и захвати улицы
           </motion.h2>
 
           {/* Description */}
@@ -60,8 +60,7 @@ export function AISection() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-zinc-400 max-w-md mb-8"
           >
-            <span className="text-white font-medium">Orbit для агентов.</span> Выбирайте из множества ИИ-агентов и
-            делегируйте задачи: от генерации кода до других технических задач.
+            <span className="text-white font-medium">Союзы решают всё.</span> Выбирай фракцию, заключай союзы с другими игроками и делай выбор, который повлияет на ход событий.
           </motion.p>
 
           {/* Learn more button */}
@@ -135,7 +134,7 @@ export function AISection() {
 
                 {/* Input field */}
                 <div className="bg-zinc-800/50 border border-zinc-700 rounded-t-xl px-5 py-4">
-                  <span className="text-zinc-500 italic">Назначить...</span>
+                  <span className="text-zinc-500 italic">Выбрать фракцию...</span>
                 </div>
 
                 {/* Dropdown options */}
@@ -177,7 +176,7 @@ export function AISection() {
                             {agent.name}
                           </span>
                           {agent.isAgent && (
-                            <span className="text-xs bg-zinc-700 text-zinc-400 px-2 py-0.5 rounded">Агент</span>
+                            <span className="text-xs bg-red-900/50 text-red-400 px-2 py-0.5 rounded">Фракция</span>
                           )}
                         </div>
                         {agent.selected && <Check className="w-4 h-4 text-zinc-400" />}
@@ -200,9 +199,9 @@ export function AISection() {
             <div className="grid grid-cols-1 md:grid-cols-2">
               {/* Left column */}
               <div className="border-t border-r border-b border-zinc-800/60 pt-12 pr-12 pb-16">
-                <h3 className="text-zinc-200 font-medium text-xl mb-3">Автопилот для продукта</h3>
+                <h3 className="text-zinc-200 font-medium text-xl mb-3">Переговоры и интриги</h3>
                 <p className="text-zinc-500 text-base mb-8">
-                  Оптимизируйте рабочие процессы с ИИ-ассистентом для рутинных и ручных задач.
+                  Совершенствуй навыки переговорщика, заключай союзы и предавай врагов в нужный момент.
                 </p>
 
                 {/* Triage Intelligence Card */}
@@ -282,9 +281,9 @@ export function AISection() {
 
               {/* Right column */}
               <div className="border-t border-b border-zinc-800/60 pt-12 pl-12 pb-16">
-                <h3 className="text-zinc-200 font-medium text-xl mb-3">Orbit MCP</h3>
+                <h3 className="text-zinc-200 font-medium text-xl mb-3">Огромная открытая карта</h3>
                 <p className="text-zinc-500 text-base mb-8">
-                  Подключите Orbit к любимым инструментам: Cursor, Claude, ChatGPT и другим.
+                  Создай свой путь, взаимодействуя с другими игроками на карте реальных российских улиц.
                 </p>
 
                 {/* MCP Code Snippet */}

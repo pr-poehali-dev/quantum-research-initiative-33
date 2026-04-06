@@ -65,8 +65,8 @@ export function DashboardMockup() {
         {/* Logo */}
         <div className="p-3 border-b border-zinc-800/50">
           <div className="flex items-center gap-2 px-2 py-1.5">
-            <CirclePower className="w-5 h-5 text-white" />
-            <span className="text-white font-semibold text-sm">Orbit</span>
+            <span className="text-base">🔫</span>
+            <span className="text-white font-bold text-sm tracking-wider">BLACK RUSSIA</span>
             <ChevronDown className="w-3.5 h-3.5 text-zinc-500 ml-auto" />
           </div>
         </div>
@@ -82,20 +82,20 @@ export function DashboardMockup() {
 
         {/* Main nav */}
         <div className="px-3 space-y-0.5">
-          <NavItem icon={Inbox} label="Входящие" badge={3} active />
-          <NavItem icon={CircleUser} label="Мои задачи" />
+          <NavItem icon={Inbox} label="Уведомления" badge={3} active />
+          <NavItem icon={CircleUser} label="Мой персонаж" />
         </div>
 
         {/* Workspace section */}
         <div className="mt-5 px-3">
           <div className="px-2 py-1 text-[10px] text-zinc-500 font-medium uppercase tracking-wider flex items-center gap-1">
-            Пространство
+            Мир
           </div>
           <div className="space-y-0.5 mt-1">
-            <NavItem icon={Layers} label="Инициативы" hasSubmenu />
-            <NavItem icon={FolderKanban} label="Проекты" hasSubmenu />
-            <NavItem icon={LayoutGrid} label="Представления" hasSubmenu />
-            <NavItem icon={Users} label="Команды" hasSubmenu />
+            <NavItem icon={Layers} label="Миссии" hasSubmenu />
+            <NavItem icon={FolderKanban} label="Территории" hasSubmenu />
+            <NavItem icon={LayoutGrid} label="Карта" hasSubmenu />
+            <NavItem icon={Users} label="Банды" hasSubmenu />
           </div>
         </div>
 
@@ -105,20 +105,20 @@ export function DashboardMockup() {
             Избранное
           </div>
           <div className="space-y-0.5 mt-1">
-            <NavItem icon={Smartphone} label="Мобильное приложение" color="text-blue-400" />
-            <NavItem icon={Map} label="Роадмап Q1" color="text-orange-400" />
-            <NavItem icon={FileText} label="API Документация" color="text-emerald-400" />
+            <NavItem icon={Smartphone} label="Мой телефон" color="text-blue-400" />
+            <NavItem icon={Map} label="Карта районов" color="text-red-400" />
+            <NavItem icon={FileText} label="Досье" color="text-emerald-400" />
           </div>
         </div>
 
         {/* Teams section */}
         <div className="mt-5 px-3 flex-1">
           <div className="px-2 py-1 text-[10px] text-zinc-500 font-medium uppercase tracking-wider flex items-center gap-1">
-            Ваши команды
+            Банды
           </div>
           <div className="space-y-0.5 mt-1">
-            <NavItem icon={Sparkles} label="Продукт" hasSubmenu />
-            <NavItem icon={Settings} label="Разработка" hasSubmenu />
+            <NavItem icon={Sparkles} label="Красный Восток" hasSubmenu />
+            <NavItem icon={Settings} label="Группировка Север" hasSubmenu />
           </div>
         </div>
 
@@ -134,7 +134,7 @@ export function DashboardMockup() {
         variants={panelVariants}
       >
         <div className="px-4 py-3 border-b border-zinc-800/50 flex items-center justify-between">
-          <h3 className="text-white font-semibold text-sm">Входящие</h3>
+          <h3 className="text-white font-semibold text-sm">Уведомления</h3>
           <div className="flex items-center gap-2">
             <button className="text-zinc-500 hover:text-white transition-colors">
               <Plus className="w-4 h-4" />
@@ -144,65 +144,65 @@ export function DashboardMockup() {
 
         <div className="flex-1 overflow-auto scrollbar-hide">
           <InboxItem
-            id="ENG-135"
-            title="Рефакторинг краулера"
-            subtitle="nan назначил вам"
+            id="OPR-001"
+            title="Ограбление банка"
+            subtitle="Дмитрий назначил вас"
             time="2ч"
             avatar="https://i.pravatar.cc/32?img=1"
             status="in-progress"
             active
           />
           <InboxItem
-            id="LLM"
-            title="LLM Чат-бот"
-            subtitle="Обновление проекта от raissa"
+            id="RACE"
+            title="Ночные гонки на МКАД"
+            subtitle="Новое задание от Бориса"
             time="1д"
             avatar="https://i.pravatar.cc/32?img=2"
             status="todo"
             isProject
           />
           <InboxItem
-            id="ENG-159"
-            title="Ошибка загрузки изображений"
-            subtitle="SLA нарушен"
+            id="WAR-03"
+            title="Атака на склад Севера"
+            subtitle="Объявлена война"
             time="2д"
             avatar="https://i.pravatar.cc/32?img=3"
             status="bug"
           />
           <InboxItem
-            id="DES-498"
-            title="Редизайн настроек..."
-            subtitle="karri упомянул вас"
+            id="NEG-12"
+            title="Переговоры с Кланом Призраки"
+            subtitle="Алексей ждёт ответа"
             time="4ч"
             avatar="https://i.pravatar.cc/32?img=4"
             status="todo"
           />
           <InboxItem
-            id="ENG-160"
-            title="Движок Holtzmann сломан"
-            subtitle="Вы просили напомнить"
+            id="MIS-44"
+            title="Побег от полиции"
+            subtitle="Напоминание о миссии"
             time="1н"
             avatar="https://i.pravatar.cc/32?img=5"
             status="bug"
           />
           <InboxItem
-            title="Эксперименты с регистрацией"
-            subtitle="Добавлен в проект"
+            title="Захват рынка наркотиков"
+            subtitle="Операция завершена"
             avatar="https://i.pravatar.cc/32?img=6"
             status="done"
             isProject
           />
           <InboxItem
-            id="MKT-122"
-            title="Ассеты для маркетинга"
-            subtitle="erin отметил как Дубликат"
+            id="TUN-07"
+            title="Тюнинг BMW M5"
+            subtitle="Игорь отметил как готово"
             time="1н"
             avatar="https://i.pravatar.cc/32?img=7"
             status="done"
           />
           <InboxItem
-            title="Главная страница v3"
-            subtitle="Обновление проекта от paco"
+            title="Новый сезон в Black Russia"
+            subtitle="Обновление сезона от команды"
             avatar="https://i.pravatar.cc/32?img=8"
             status="todo"
             isProject
@@ -215,44 +215,44 @@ export function DashboardMockup() {
         {/* Header breadcrumb */}
         <div className="px-5 py-3 border-b border-zinc-800/50 flex items-center justify-between shrink-0">
           <div className="flex items-center gap-1.5 text-xs">
-            <span className="text-zinc-500">Разработка</span>
+            <span className="text-zinc-500">Операции</span>
             <span className="text-zinc-600">›</span>
-            <span className="text-emerald-400">Spice harvester</span>
+            <span className="text-red-400">Банда Красный Восток</span>
             <span className="text-zinc-600">›</span>
-            <span className="text-zinc-300">ENG-135</span>
+            <span className="text-zinc-300">OPR-001</span>
           </div>
           <MoreHorizontal className="w-4 h-4 text-zinc-500" />
         </div>
 
         {/* Content */}
         <div className="flex-1 p-5 overflow-auto scrollbar-hide">
-          <h2 className="text-white text-xl font-semibold mb-5">Рефакторинг краулера</h2>
+          <h2 className="text-white text-xl font-semibold mb-5">Ограбление банка</h2>
 
           {/* Code block */}
           <div className="bg-zinc-900/80 rounded-lg p-4 text-[11px] font-mono mb-5 border border-zinc-800/50">
             <div className="space-y-2">
               <div>
-                <span className="text-zinc-500">Комментарий.</span>
-                <span className="text-amber-300">documentContent</span>
-                <span className="text-zinc-400"> определен неверно. Должен быть </span>
-                <span className="text-cyan-300">LazyManyToOne</span>
-                <span className="text-zinc-400"> связью.</span>
+                <span className="text-zinc-500">Брифинг.</span>
+                <span className="text-amber-300">Охрана</span>
+                <span className="text-zinc-400"> сменяется в </span>
+                <span className="text-cyan-300">23:00</span>
+                <span className="text-zinc-400">. Нужны 3 человека.</span>
               </div>
               <div className="mt-3 text-zinc-600">
-                {/* The document content that this comment is associated with. */}
+                {/* Координаты точки сбора: 55.751244, 37.618423 */}
               </div>
               <div>
-                <span className="text-purple-400">@ManyToOne</span>
+                <span className="text-purple-400">@Дмитрий</span>
                 <span className="text-zinc-400">(</span>
-                <span className="text-cyan-300">DocumentContent</span>
+                <span className="text-cyan-300">Снайпер</span>
                 <span className="text-zinc-400">,</span>
-                <span className="text-amber-300">comments</span>
+                <span className="text-amber-300">Алексей</span>
                 <span className="text-zinc-400">,</span>
-                <span className="text-amber-300">cascade</span>
+                <span className="text-amber-300">роль</span>
                 <span className="text-zinc-400">:</span>
-                <span className="text-orange-300">true</span>
+                <span className="text-orange-300">Водитель</span>
                 <span className="text-zinc-400">,</span>
-                <span className="text-amber-300">nullable</span>
+                <span className="text-amber-300">вооружён</span>
                 <span className="text-zinc-400">:</span>
                 <span className="text-orange-300">false</span>
                 <span className="text-zinc-400">)</span>

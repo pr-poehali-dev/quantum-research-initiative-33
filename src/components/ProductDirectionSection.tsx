@@ -15,8 +15,8 @@ export function ProductDirectionSection() {
       <div className="max-w-6xl mx-auto">
         {/* Section label */}
         <div className="flex items-center gap-2 mb-6">
-          <div className="w-3 h-3 rounded-full bg-green-500" />
-          <span className="text-zinc-400 text-sm">Проекты и долгосрочное планирование</span>
+          <div className="w-3 h-3 rounded-full bg-red-500" />
+          <span className="text-zinc-400 text-sm">Миссии и прогресс</span>
           <ChevronRight className="w-4 h-4 text-zinc-500" />
         </div>
 
@@ -30,13 +30,12 @@ export function ProductDirectionSection() {
             lineHeight: 1.1,
           }}
         >
-          Задайте направление продукта
+          Захвати криминальный рынок
         </h2>
 
         {/* Description */}
         <p className="text-zinc-400 text-lg max-w-md mb-16">
-          <span className="text-white font-medium">Объедините команду вокруг единой дорожной карты.</span> Планируйте,
-          управляйте и отслеживайте все инициативы с помощью визуальных инструментов Orbit.
+          <span className="text-white font-medium">Расширяй влияние шаг за шагом.</span> Планируй налёты, контролируй районы и отслеживай прогресс твоей криминальной империи.
         </p>
 
         {/* 3D Timeline Visualization */}
@@ -88,28 +87,28 @@ export function ProductDirectionSection() {
 
               {/* Date labels */}
               <div className="absolute text-zinc-500 text-sm" style={{ left: "8%", top: "80px" }}>
-                30
+                Ур.1
               </div>
               <div className="absolute text-zinc-500 text-sm" style={{ left: "18%", top: "55px" }}>
-                3 АВГ
+                Ур.5
               </div>
               <div className="absolute text-zinc-500 text-sm" style={{ left: "32%", top: "35px" }}>
-                10
+                Ур.10
               </div>
               <div className="absolute text-zinc-500 text-sm" style={{ left: "48%", top: "15px" }}>
-                17
+                Ур.20
               </div>
               <div
-                className="absolute px-3 py-1 rounded-md bg-zinc-700/80 text-zinc-300 text-sm font-medium"
+                className="absolute px-3 py-1 rounded-md bg-red-900/60 text-red-300 text-sm font-medium"
                 style={{ left: "58%", top: "-10px" }}
               >
-                22 АВГ
+                Ур.30 — Босс
               </div>
               <div className="absolute text-zinc-500 text-sm" style={{ left: "70%", top: "-5px" }}>
-                24
+                Ур.40
               </div>
               <div className="absolute text-zinc-500/50 text-sm" style={{ left: "88%", top: "-25px" }}>
-                СЕН
+                Макс
               </div>
 
               {/* Project bars */}
@@ -123,8 +122,8 @@ export function ProductDirectionSection() {
                   height: "48px",
                 }}
               >
-                <div className="w-4 h-4 rotate-45 bg-zinc-500/60" />
-                <span className="text-zinc-300 text-sm font-medium">Инференс в реальном времени</span>
+                <div className="w-4 h-4 rotate-45 bg-red-500/60" />
+                <span className="text-zinc-300 text-sm font-medium">Захват территории «Север»</span>
                 <div
                   className="absolute w-5 h-5 rotate-45 border-2 border-green-500 bg-transparent"
                   style={{ right: "15%", top: "50%", transform: "translateY(-50%) rotate(45deg)" }}
@@ -142,7 +141,7 @@ export function ProductDirectionSection() {
                 }}
               >
                 <div className="w-3 h-3 rotate-45 bg-zinc-600/60" />
-                <span className="text-zinc-500 text-sm">Прототип</span>
+                <span className="text-zinc-500 text-sm">Разведка района</span>
               </div>
 
               {/* Beta bar */}
@@ -155,7 +154,7 @@ export function ProductDirectionSection() {
                   height: "48px",
                 }}
               >
-                <span className="text-zinc-400 text-sm">Бета</span>
+                <span className="text-zinc-400 text-sm">Ограбление банка</span>
                 <div className="flex gap-0.5">
                   <div className="w-2.5 h-2.5 rotate-45 bg-zinc-500/60" />
                   <div className="w-2.5 h-2.5 rotate-45 bg-zinc-500/60" />
@@ -173,7 +172,7 @@ export function ProductDirectionSection() {
                   height: "48px",
                 }}
               >
-                <span className="text-zinc-400 text-sm">RLHF-дообучение</span>
+                <span className="text-zinc-400 text-sm">Наркоторговля</span>
                 <div className="flex gap-0.5">
                   <div className="w-2.5 h-2.5 rotate-45 bg-zinc-500/60" />
                   <div className="w-2.5 h-2.5 rotate-45 bg-zinc-500/60" />
@@ -187,27 +186,27 @@ export function ProductDirectionSection() {
         <div className="grid grid-cols-1 md:grid-cols-2">
           {/* Left column - Manage projects end-to-end */}
           <div className="border-t border-r border-b border-zinc-800 pt-10 pr-10 pb-16">
-            <h3 className="text-xl font-medium text-zinc-200 mb-3">Управляйте проектами от А до Я</h3>
+            <h3 className="text-xl font-medium text-zinc-200 mb-3">Управляй своей бандой</h3>
             <p className="text-zinc-500 text-base leading-relaxed mb-8">
-              Объедините спецификации, этапы, задачи и документацию в одном месте.
+              Назначай роли, распределяй задания и веди членов банды к победе.
             </p>
 
             <div className="rounded-xl border border-zinc-800 bg-zinc-900/50 p-5">
-              <h4 className="text-lg font-medium text-zinc-200 mb-5">Обзор проекта</h4>
+              <h4 className="text-lg font-medium text-zinc-200 mb-5">Банда «Красный Восток»</h4>
 
               {/* Properties row */}
               <div className="flex items-center gap-4 mb-4">
-                <span className="text-zinc-500 text-sm w-20">Свойства</span>
+                <span className="text-zinc-500 text-sm w-20">Статус</span>
                 <div className="flex items-center gap-2">
                   <span className="flex items-center gap-1.5 px-2 py-1 rounded bg-zinc-800 text-zinc-300 text-xs">
-                    <span className="w-2 h-2 rounded-full bg-yellow-500" />
-                    В работе
+                    <span className="w-2 h-2 rounded-full bg-red-500" />
+                    Активна
                   </span>
                   <span className="flex items-center gap-1.5 px-2 py-1 rounded bg-zinc-800 text-zinc-300 text-xs">
                     <svg className="w-3 h-3" viewBox="0 0 16 16" fill="currentColor">
                       <rect x="2" y="2" width="12" height="12" rx="2" />
                     </svg>
-                    ENG
+                    12 чел.
                   </span>
                   <div className="flex -space-x-1.5">
                     <div className="w-5 h-5 rounded-full bg-zinc-600 border border-zinc-900" />
@@ -222,25 +221,25 @@ export function ProductDirectionSection() {
                 <span className="text-zinc-500 text-sm w-20">Ресурсы</span>
                 <div className="flex items-center gap-2">
                   <span className="flex items-center gap-1.5 px-2 py-1 rounded bg-zinc-800 text-zinc-300 text-xs">
-                    <span className="text-purple-400">Исследование</span>
+                    <span className="text-yellow-400">💰 $124,500</span>
                   </span>
                   <span className="flex items-center gap-1.5 px-2 py-1 rounded bg-zinc-800 text-zinc-400 text-xs">
-                    <span className="text-yellow-500">Интервью</span>
+                    <span className="text-red-400">🔫 Арсенал</span>
                   </span>
                 </div>
               </div>
 
               {/* Milestones row */}
               <div className="flex items-start gap-4">
-                <span className="text-zinc-500 text-sm w-20 pt-1">Этапы</span>
+                <span className="text-zinc-500 text-sm w-20 pt-1">Миссии</span>
                 <div className="flex flex-col gap-2">
                   <span className="flex items-center gap-2 text-zinc-300 text-sm">
-                    <span className="w-2.5 h-2.5 rotate-45 bg-purple-500" />
-                    Дизайн-ревью <span className="text-zinc-500">100%</span>
+                    <span className="w-2.5 h-2.5 rotate-45 bg-red-500" />
+                    Захват склада <span className="text-zinc-500">100%</span>
                   </span>
                   <span className="flex items-center gap-2 text-zinc-300 text-sm">
-                    <span className="w-2.5 h-2.5 rotate-45 bg-purple-500" />
-                    Внутренняя альфа <span className="text-zinc-500">100% из 10</span>
+                    <span className="w-2.5 h-2.5 rotate-45 bg-red-500" />
+                    Ограбление инкассатора <span className="text-zinc-500">100%</span>
                   </span>
                   <span className="flex items-center gap-2 text-zinc-400 text-sm">
                     <span className="w-2.5 h-2.5 rotate-45 border border-zinc-500 bg-transparent" />
@@ -253,49 +252,49 @@ export function ProductDirectionSection() {
 
           {/* Right column - Project updates */}
           <div className="border-t border-b border-zinc-800 pt-10 pl-10 pb-16">
-            <h3 className="text-xl font-medium text-zinc-200 mb-3">Обновления проекта</h3>
+            <h3 className="text-xl font-medium text-zinc-200 mb-3">Статус операций</h3>
             <p className="text-zinc-500 text-base leading-relaxed mb-8">
-              Сообщайте о прогрессе и статусе проекта с помощью встроенных отчетов.
+              Отслеживай ход всех активных миссий и получай уведомления в реальном времени.
             </p>
 
             <div className="relative h-48">
-              {/* Off track card (back) */}
+              {/* Провалена card (back) */}
               <div
                 className="absolute rounded-lg bg-zinc-800/40 border border-zinc-700/30 px-4 py-2"
                 style={{ top: 0, left: "10%", width: "80%" }}
               >
                 <span className="flex items-center gap-2 text-zinc-500 text-sm">
                   <span className="w-1.5 h-1.5 rounded-full bg-zinc-500" />
-                  Отстает
+                  Провалена
                 </span>
               </div>
 
-              {/* At risk card (middle) */}
+              {/* Под угрозой card (middle) */}
               <div
                 className="absolute rounded-lg bg-zinc-800/60 border border-zinc-700/40 px-4 py-2"
                 style={{ top: "30px", left: "5%", width: "85%" }}
               >
                 <span className="flex items-center gap-2 text-zinc-400 text-sm">
-                  <span className="w-1.5 h-1.5 rounded-full bg-zinc-400" />
-                  Под риском
+                  <span className="w-1.5 h-1.5 rounded-full bg-yellow-500" />
+                  Под угрозой
                 </span>
               </div>
 
-              {/* On track card (front) */}
+              {/* Выполняется card (front) */}
               <div
                 className="absolute rounded-xl bg-zinc-800/90 border border-zinc-700/50 px-5 py-4"
                 style={{ top: "60px", left: 0, width: "95%" }}
               >
                 <div className="flex items-center gap-2 mb-2">
-                  <span className="w-5 h-5 rounded-full bg-green-500/20 flex items-center justify-center">
-                    <svg className="w-3 h-3 text-green-500" viewBox="0 0 16 16" fill="currentColor">
+                  <span className="w-5 h-5 rounded-full bg-red-500/20 flex items-center justify-center">
+                    <svg className="w-3 h-3 text-red-500" viewBox="0 0 16 16" fill="currentColor">
                       <path d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z" />
                     </svg>
                   </span>
-                  <span className="text-green-500 font-medium text-sm">По плану</span>
+                  <span className="text-red-400 font-medium text-sm">В процессе</span>
                 </div>
-                <p className="text-zinc-300 text-sm mb-3">Готовы к запуску в четверг</p>
-                <span className="text-zinc-500 text-xs">8 сен</span>
+                <p className="text-zinc-300 text-sm mb-3">Ограбление — сегодня в 23:00</p>
+                <span className="text-zinc-500 text-xs">3 игрока онлайн</span>
               </div>
             </div>
           </div>
@@ -305,22 +304,22 @@ export function ProductDirectionSection() {
           {/* Left column - Feature list */}
           <div className="border-r border-zinc-800 pt-16 pr-10 pb-16 flex flex-col justify-center">
             <h3 className="text-2xl font-medium text-zinc-200 mb-8 leading-tight">
-              Генерируйте идеи
+              Планируй операции
               <br />
-              и планируйте работу
+              и побеждай врагов
             </h3>
             <div className="flex flex-col gap-3">
               <div className="flex items-center gap-3">
-                <div className="w-1 h-5 rounded-full bg-green-500" />
-                <span className="text-zinc-200 font-medium">Совместные документы</span>
+                <div className="w-1 h-5 rounded-full bg-red-500" />
+                <span className="text-zinc-200 font-medium">Разведка перед миссией</span>
               </div>
               <div className="flex items-center gap-3">
-                <div className="w-1 h-5 rounded-full bg-green-500/50" />
-                <span className="text-zinc-400">Комментарии в тексте</span>
+                <div className="w-1 h-5 rounded-full bg-red-500/50" />
+                <span className="text-zinc-400">Координация с бандой</span>
               </div>
               <div className="flex items-center gap-3">
-                <div className="w-1 h-5 rounded-full bg-green-500/30" />
-                <span className="text-zinc-500">Создание задач из текста</span>
+                <div className="w-1 h-5 rounded-full bg-red-500/30" />
+                <span className="text-zinc-500">Дележ добычи</span>
               </div>
             </div>
           </div>

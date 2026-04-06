@@ -46,7 +46,7 @@ export function Hero3DStage() {
             transform: "translate(-50%, -30%)",
             width: "1200px",
             height: "800px",
-            background: "radial-gradient(ellipse at center, rgba(99, 102, 241, 0.08) 0%, transparent 70%)",
+            background: "radial-gradient(ellipse at center, rgba(185, 28, 28, 0.12) 0%, transparent 70%)",
           }}
         />
 
@@ -59,9 +59,9 @@ export function Hero3DStage() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
-                className="text-4xl md:text-5xl lg:text-[56px] font-medium text-white leading-[1.1] text-balance"
+                className="text-4xl md:text-5xl lg:text-[56px] font-bold text-white leading-[1.1] text-balance tracking-tight"
               >
-                Orbit - инструмент для планирования и создания продуктов
+                Играй в настоящую Россию, где каждое решение имеет последствия
               </motion.h1>
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
@@ -69,9 +69,9 @@ export function Hero3DStage() {
                 transition={{ duration: 0.6, delay: 0.1 }}
                 className="mt-6 text-lg text-zinc-400"
               >
-                Система для современной разработки.
+                Стань главой собственной банды. Участвуй в перестрелках,
                 <br />
-                Управляйте задачами, проектами и дорожными картами.
+                уличных гонках и преступных интригах.
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -79,11 +79,11 @@ export function Hero3DStage() {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className="mt-8 flex items-center gap-6"
               >
-                <button className="px-5 py-2.5 bg-white text-zinc-900 font-medium rounded-lg hover:bg-zinc-100 transition-colors text-sm">
-                  Начать работу
+                <button className="px-5 py-2.5 bg-red-700 hover:bg-red-600 text-white font-bold rounded-lg transition-colors text-sm tracking-wide">
+                  Начать игру
                 </button>
                 <button className="text-zinc-300 font-medium hover:text-white transition-colors flex items-center gap-2 text-sm">
-                  <span className="text-zinc-500">Новинка:</span> Orbit-агент для Slack
+                  <span className="text-red-500">10 млн игроков</span> уже в деле
                   <span aria-hidden="true">→</span>
                 </button>
               </motion.div>

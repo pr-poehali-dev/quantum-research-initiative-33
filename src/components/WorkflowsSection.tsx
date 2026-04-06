@@ -4,50 +4,50 @@ import { ChevronLeft, ChevronRight, Plus, ArrowRight, MessageSquare, GitBranch, 
 const carouselCards = [
   {
     id: 1,
-    category: "Запросы клиентов",
-    title: "Создавайте то, что нужно клиентам",
+    category: "Уличные гонки",
+    title: "Тюнингуй тачку и рви всех на трассе",
     icon: ArrowRight,
     mockup: "intercom",
   },
   {
     id: 2,
-    category: "Git-интеграция",
-    title: "Автоматизируйте PR и коммиты",
+    category: "Перестрелки",
+    title: "Захватывай районы в жарких боестолкновениях",
     icon: Plus,
     mockup: "github",
   },
   {
     id: 3,
-    category: "Orbit Mobile",
-    title: "Управляйте работой откуда угодно",
+    category: "Мобильный доступ",
+    title: "Управляй бандой откуда угодно",
     icon: ArrowRight,
     mockup: "mobile",
   },
   {
     id: 4,
-    category: "Orbit Asks",
-    title: "Превращайте запросы в задачи",
+    category: "Криминальные задания",
+    title: "Превращай запросы боссов в реальные дела",
     icon: ArrowRight,
     mockup: "asks",
   },
   {
     id: 5,
-    category: "Интеграции Orbit",
-    title: "100+ способов расширить возможности",
+    category: "Скины и кастомизация",
+    title: "100+ уникальных образов персонажа",
     icon: ArrowRight,
     mockup: "integrations",
   },
   {
     id: 6,
-    category: "Интеграция с Figma",
-    title: "Связь между разработкой и дизайном",
+    category: "Преступные интриги",
+    title: "Плети заговоры и предавай в нужный момент",
     icon: ArrowRight,
     mockup: "figma",
   },
   {
     id: 7,
-    category: "Для разработчиков",
-    title: "Создавайте плагины через Orbit API",
+    category: "Для хардкорщиков",
+    title: "API для модов и кастомных серверов",
     icon: ArrowRight,
     mockup: "api",
   },
@@ -242,23 +242,22 @@ export function WorkflowsSection() {
           <div className="lg:max-w-xl">
             {/* Orange indicator */}
             <div className="flex items-center gap-2 mb-6">
-              <div className="w-2 h-2 rounded-full bg-orange-500" />
-              <span className="text-sm text-zinc-400">Процессы и интеграции</span>
+              <div className="w-2 h-2 rounded-full bg-red-500" />
+              <span className="text-sm text-zinc-400">Геймплей и возможности</span>
               <ChevronRight className="w-4 h-4 text-zinc-600" />
             </div>
 
             {/* Heading */}
             <h2 className="text-4xl md:text-5xl font-medium text-white leading-[1.1]">
-              Работайте слаженно
+              Живи по законам
               <br />
-              между инструментами
+              улицы
             </h2>
           </div>
 
           {/* Description */}
           <p className="text-zinc-400 lg:max-w-sm lg:pt-12">
-            Расширьте возможности Orbit с помощью интеграций, которые синхронизируют всю команду и держат фокус на
-            главном.
+            В Black Russia каждый выбор имеет последствия. Объединяй людей, захватывай районы и строй свою криминальную империю.
           </p>
         </div>
 
